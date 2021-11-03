@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+"tag": "",
+"description": "",
+    "properties": {
+        "user": {
+            "type": "object",
+"tag": "",
+"description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                },
+                "nickname": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                },
+                "title": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                },
+                "accountType": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                },
+                "countryCode": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                },
+                "orientation": {
+                    "type": "string",
+"tag": "",
+"description": ""
+                }
+            },
+            "required": [
+                "accountType",
+                "countryCode",
+                "id",
+                "nickname",
+                "orientation",
+                "title"
+            ]
+        },
+        "time": {
+            "type": "integer",
+"tag": "",
+"description": ""
+        },
+        "acl": {
+            "type": "array",
+"tag": "",
+"description": ""
+        },
+        "publicFeed": {
+            "type": "boolean",
+"tag": "",
+"description": ""
+        },
+        "internationalCountries": {
+            "type": "array",
+"tag": "",
+"description": "",
+            "items": {
+                "type": "string",
+"tag": "",
+"description": ""
+            }
+        },
+        "topTraderFeed": {
+            "type": "boolean",
+"tag": "",
+"description": ""
+        }
+    },
+    "required": [
+        "acl",
+        "internationalCountries",
+        "publicFeed",
+        "time",
+        "topTraderFeed",
+        "user"
+    ]
+}
